@@ -17,3 +17,20 @@ Rezervacija parking mesta funkcionise po principu "ko prvi stigne, prvi rezervi�
 nepredviđenih okolnosti, vlasnik parking mesta može povući rezervaciju najkasnije do 17h
 prethodnog dana. Ako osoba koja je rezervisala određeno parking mesto ne dođe na posao do 9h,
 to mesto se oslobađa kolegi kojem je parking potreban.
+
+# Parking App — Starter
+## Zahtev
+Aplikacija za deljenje parking mesta, MVP: registracija/login, pregled
+parking mesta, vlasnici označavaju odsustvo, ostali rezervišu.
+## Kako pokrenuti (Docker)
+1. build backend jar: `cd backend && mvn clean package -DskipTests`
+2. build frontend: `cd frontend && npm install && npm run build`
+3. `docker-compose up --build`
+Backend će biti dostupan na http://localhost:8080, frontend na http://
+localhost:4200
+## Razvoj lokalno
+- Backend: `mvn spring-boot:run` u `backend/`
+- Frontend: `ng serve` u `frontend/`
+## OpenAPI
+Springdoc se automatski pokreće: http://localhost:8080/swagger-ui.html
+## Napomene:
